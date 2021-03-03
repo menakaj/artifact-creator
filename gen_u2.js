@@ -85,11 +85,11 @@ const genScriptFile = (filesToRemoveFromPack, newFilesAdded) => {
     
     `;
 
-    fs.writeFile("run-in-pmt.js", script, function (err) {
+    fs.writeFile("run-in-umt.js", script, function (err) {
         if (err) {
             return console.log(err);
         }
-        console.log("run-in-pmt.js file is saved");
+        console.log("run-in-umt.js file is saved");
     });
 
     //Create the file upload zip file.
